@@ -12,5 +12,5 @@
  - 实现功能简介：调用播放API接口时，bypass掉底层音效等算法，实现原始流数据播放
  - 数据格式说明：创建一个播放实例，读取本地pcm文件，送给播放实例播放，代码默认pcm文件格式（采样率：48kHz，通道：2，位深：16bit）
  - 文件路径位置：src/main/java/com/hwaudio/player/AudioPlayerBase.java
- - 创建播放位置：代码61行，创建播放流类型为：AudioManager.STREAM_NOTIFICATION
+ - 创建播放位置：代码61行，创建播放流类型为：AudioManager.STREAM_NOTIFICATION(__如无效效可替换为AudioManager.STREAM_SYSTEM__)
  - 特别注意位置：17行修改为自己要播放的pcm文件路径
